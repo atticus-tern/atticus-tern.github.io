@@ -1,0 +1,97 @@
+a::selection, p::selection, h2::selection, h3::selection, b::selection, *::selection {
+    background-color: white !important;
+    color: rgb(26, 26, 29) !important;
+}
+
+#mainContainer {
+    background-color: rgb(26, 26, 29);
+    /* margin-top: 20vh; */
+    margin-left: 15vw;
+    margin-right: 15vw;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#contentContain {
+    /* flex-grow: 2; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+#contentContain div {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+/* #mainContainer div {
+    /* flex-grow: 1; */
+    /* width: 20vw;
+} */
+
+#mainContainer p {
+    display: inline;
+    font-family: 'bitter';
+    /* margin-bottom: 50px; */
+}
+
+#mainContainer h2,
+h3 {
+    font-family: 'comfortaa';
+}
+
+#mainContainer a {
+    color: white;
+    /* text-decoration: none; */
+}
+
+/* #mainContainer a:hover {
+    text-decoration: underline;
+} */
+
+body {
+    margin: 0;
+    /* background-color: rgb(13, 49, 79); */
+    background-image: url("./sky.jpeg");
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* height: 100vh; */
+}
+
+html, body {
+    height: 100%
+}
+
+@media only screen and (max-width: 945px) {
+    
+    #contentContain {
+        flex-direction: column;
+        /* padding: 25px 30px; */
+    }
+
+    #mainContainer {
+        padding: 25px 30px;
+    }
+
+    #mainContainer div {
+        /* flex-grow: 1; */
+        width: 100%;
+    }
+    #contentContain div {
+        margin: 0;
+    }
+}
+@media (max-aspect-ratio: 727/543) {
+    body {
+        background-size: auto 100%;
+    }
+}
