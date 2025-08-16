@@ -59,7 +59,7 @@ h3 {
 body {
     margin: 0;
     /* background-color: rgb(13, 49, 79); */
-    background-image: url("./sky.jpeg");
+    background-image: url("./sky.png");
     background-size: 100% auto;
     display: flex;
     flex-direction: column;
