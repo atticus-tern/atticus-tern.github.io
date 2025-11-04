@@ -17,6 +17,10 @@ a::selection, p::selection, h2::selection, h3::selection, b::selection, *::selec
     
 }
 
+img {
+    border-radius: 100%;
+}
+
 #contentContain {
     /* flex-grow: 2; */
     display: flex;
