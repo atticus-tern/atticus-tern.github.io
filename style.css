@@ -75,11 +75,19 @@ html, body {
     height: 100%
 }
 
+.profile {
+    display: block;
+}
+
 @media only screen and (max-width: 945px) {
     
     #contentContain {
         flex-direction: column;
         /* padding: 25px 30px; */
+    }
+
+    .profile {
+        display: none;
     }
 
     #mainContainer {
