@@ -1,5 +1,4 @@
 <!--Created by Atticus Tern-->
-<!--test-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,12 @@
 <body>
     <div id="mainContainer">
         <p>My name is Atticus and I enjoy creating art.</p>
-        <img src="./profile.png" alt="profile" width="120px" class="profile">
+        <img src="./Profiles/profile-forest.png" alt="profile" width="120px" class="profile">
+        <img src="./Profiles/profile-gold-blue-round.png" alt="profile" width="120px" class="profile">
+        <img src="./Profiles/profile-halftone.png" alt="profile" width="120px" class="profile">
+        <img src="./Profiles/profile-red-teal.png" alt="profile" width="120px" class="profile">
+        <img src="./Profiles/profile-skyline.png" alt="profile" width="120px" class="profile">
+        <img src="./Profiles/profile.png" alt="profile" width="120px" class="profile">
         <div id="contentContain">
 
             <div>
@@ -61,7 +65,15 @@
             </div>
         </div>
     </div>
-    </div>
+    <script>
+        let img = document.getElementsByClassName("profile");
+        let imgToKeep = Math.floor(Math.random() * img.length);
+
+        for (let i = img.length - 1; i >= 0; i--) {
+            const element = img[i];
+            if (i != imgToKeep) element.parentElement.removeChild(element);
+        }
+    </script>
 </body>
 
 </html>
